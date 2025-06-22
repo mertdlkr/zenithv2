@@ -92,8 +92,8 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+    <div className="bg-gradient-to-br from-gray-50 to-blue-50 min-h-[calc(100vh-5rem)]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Hero Header */}
       <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl p-8 text-white">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">

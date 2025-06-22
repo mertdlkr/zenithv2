@@ -19,7 +19,7 @@ function App() {
         <Router>
           <div className="min-h-screen bg-gray-50">
             <Header />
-            <main>
+            <main className="pt-20">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/create-invoice" element={<CreateInvoice />} />

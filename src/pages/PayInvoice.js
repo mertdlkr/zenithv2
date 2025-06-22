@@ -63,7 +63,8 @@ const PayInvoice = () => {
   }
 
   return (
-    <div className="space-y-16">
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-gray-50 to-blue-50 p-4 sm:p-6 lg:p-8">
+      <div className="max-w-7xl mx-auto space-y-8">
       {/* Header */}
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h1 className="text-2xl font-bold text-gray-900 flex items-center mb-2">
@@ -340,6 +341,7 @@ const PayInvoice = () => {
           </div>
         </div>
       )}
+      </div>
     </div>
   );
 };

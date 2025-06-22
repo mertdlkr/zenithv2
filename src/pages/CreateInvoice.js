@@ -151,7 +151,7 @@ const CreateInvoice = () => {
   const processingFee = formData.amount ? (parseFloat(formData.amount) * 0.02).toFixed(2) : '0.00';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-[calc(100vh-5rem)] bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
               {/* Hero Section */}
         <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-3xl shadow-2xl p-8 text-white">
