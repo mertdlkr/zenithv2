@@ -92,7 +92,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="space-y-8 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
+    <div className="space-y-12 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Hero Header */}
       <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl p-8 text-white">
@@ -126,7 +126,7 @@ const Dashboard = () => {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
           <div className="flex items-center justify-between">
             <div>
@@ -181,7 +181,7 @@ const Dashboard = () => {
       </div>
 
       {/* Main Actions */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Stake USDC */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100 hover:shadow-3xl transition-all duration-300">
           <div className="flex items-center justify-between mb-6">
@@ -278,7 +278,7 @@ const Dashboard = () => {
             <p className="text-gray-600">Be the first to create an invoice and attract investors!</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {openInvoices.slice(0, 3).map((invoice) => (
               <div key={invoice.id} className="border border-gray-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 group">
                 <div className="flex items-start justify-between mb-4">
@@ -324,7 +324,7 @@ const Dashboard = () => {
       </div>
 
       {/* Quick Actions Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Link
           to="/open-invoices"
           className="bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-2xl p-6 transition-all duration-300 border border-blue-200 group"

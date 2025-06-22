@@ -186,7 +186,7 @@ const CreateInvoice = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
+      <div className="bg-white rounded-2xl shadow-lg p-6 mb-12 border border-gray-100">
         <div className="flex items-center justify-between mb-4">
           <div className={`flex items-center space-x-3 ${step >= 1 ? 'text-green-600' : 'text-gray-400'}`}>
             <div className={`w-10 h-10 rounded-2xl flex items-center justify-center ${step >= 1 ? 'bg-green-100' : 'bg-gray-100'}`}>
@@ -211,7 +211,7 @@ const CreateInvoice = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Main Form */}
         <div className="lg:col-span-2">
           <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
@@ -589,7 +589,7 @@ const CreateInvoice = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="space-y-6">
+        <div className="space-y-8">
           {/* Calculation Summary */}
           <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
