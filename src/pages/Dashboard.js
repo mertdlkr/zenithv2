@@ -16,7 +16,8 @@ import {
   Zap,
   Target,
   Award,
-  ArrowUpRight
+  ArrowUpRight,
+  Wallet
 } from 'lucide-react';
 
 const Dashboard = () => {
@@ -80,10 +81,13 @@ const Dashboard = () => {
             {isLoading ? (
               <div className="flex items-center justify-center">
                 <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
-                Connecting...
+                Connecting to Freighter...
               </div>
             ) : (
-              'Connect Wallet'
+              <div className="flex items-center justify-center">
+                <Wallet className="h-5 w-5 mr-3" />
+                Connect Freighter Wallet
+              </div>
             )}
           </button>
         </div>

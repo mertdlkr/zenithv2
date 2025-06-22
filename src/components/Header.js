@@ -185,8 +185,17 @@ const Header = () => {
                 disabled={isLoading}
                 className="flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Wallet className="h-5 w-5" />
-                <span>{isLoading ? 'Connecting...' : 'Connect Wallet'}</span>
+                {isLoading ? (
+                  <>
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                    <span>Connecting...</span>
+                  </>
+                ) : (
+                  <>
+                    <Wallet className="h-5 w-5" />
+                    <span>Connect Freighter</span>
+                  </>
+                )}
               </button>
             )}
           </div>
@@ -280,8 +289,17 @@ const Header = () => {
                     disabled={isLoading}
                     className="flex items-center justify-center space-x-3 w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 rounded-2xl transition-all duration-300 disabled:opacity-50"
                   >
-                    <Wallet className="h-5 w-5" />
-                    <span>{isLoading ? 'Connecting...' : 'Connect Wallet'}</span>
+                    {isLoading ? (
+                      <>
+                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                        <span>Connecting...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Wallet className="h-5 w-5" />
+                        <span>Connect Freighter</span>
+                      </>
+                    )}
                   </button>
                 )}
               </div>
