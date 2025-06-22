@@ -108,9 +108,9 @@ const OpenInvoices = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl p-8 text-white mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+              {/* Hero Section */}
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl shadow-2xl p-8 text-white">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
           <div>
             <h1 className="text-4xl font-bold mb-3">Investment Opportunities 📈</h1>
@@ -142,7 +142,7 @@ const OpenInvoices = () => {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 hover:shadow-2xl transition-all duration-300">
           <div className="flex items-center justify-between">
             <div>
@@ -186,7 +186,7 @@ const OpenInvoices = () => {
       </div>
 
       {/* Search and Filters */}
-      <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100 mb-12">
+      <div className="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Search Bar */}
           <div className="flex-1 relative">
@@ -267,6 +267,7 @@ const OpenInvoices = () => {
         )}
       </div>
 
+      <div>
       {/* Results Header */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl font-bold text-gray-900">

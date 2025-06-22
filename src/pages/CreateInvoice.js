@@ -152,9 +152,9 @@ const CreateInvoice = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-3xl shadow-2xl p-8 text-white mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+              {/* Hero Section */}
+        <div className="bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 rounded-3xl shadow-2xl p-8 text-white">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
           <div>
             <h1 className="text-4xl font-bold mb-3">Create Invoice NFT 🚀</h1>
@@ -186,7 +186,7 @@ const CreateInvoice = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 mb-12 border border-gray-100">
+      <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
         <div className="flex items-center justify-between mb-4">
           <div className={`flex items-center space-x-3 ${step >= 1 ? 'text-green-600' : 'text-gray-400'}`}>
             <div className={`w-10 h-10 rounded-2xl flex items-center justify-center ${step >= 1 ? 'bg-green-100' : 'bg-gray-100'}`}>
